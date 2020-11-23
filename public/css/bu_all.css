@@ -1,0 +1,255 @@
+hr {
+    margin: 0 !important;
+}
+.m-top {
+    margin-top: 50px;
+}
+
+.m-bottom {
+    margin-bottom: 50px;
+}
+.card {
+    height: auto;
+    background: white;
+    /* border: 1px solid #999; */
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    direction: rtl;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.card-image {
+    height: 130px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+}
+.card-content {
+    padding: 8px;
+    text-align: right;
+}
+
+.card-content .title {
+    font-size: 19px;
+    margin: -2px 0 8px;
+}
+
+.card-content .title a {
+    transition: ease 0.4s;
+}
+.card-content .title a:hover,
+.card-content .title a:focus {
+    color: #0fbde9;
+}
+
+.card-content .price {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    padding: 5px;
+    background: #5bc0de;
+    color: #fff;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    font-size: 14px;
+}
+.card-content .place {
+    position: absolute;
+    top: 8px;
+    left: -19px;
+    background: #ff4c59;
+    color: #fff;
+    width: 120px;
+    text-align: center;
+    font-weight: bold;
+    transform: skewY(-30deg);
+    box-shadow: -8px -5px 8px 1px rgba(0, 0, 0, 0.5);
+    /* font-size: 14px; */
+}
+
+.card-content .small_desc {
+    word-wrap: break-word;
+}
+
+.card-content .d_created,
+.card-content .more {
+    width: 50%;
+    float: left;
+    margin-bottom: 8px;
+    margin-top: 5px;
+}
+.card-content .d_created {
+    color: #777;
+    text-align: left;
+    font-size: 13px;
+}
+.card-content .more a {
+    font-size: 14px;
+    padding: 1px 5px;
+}
+
+/*start sidebar */
+.side-menu {
+    direction: rtl;
+}
+.side-menu li {
+    color: #777;
+    padding: 0;
+}
+
+.side-menu.user-side li.active {
+    border-right: 3px solid #5bc0de !important;
+}
+.side-menu.user-side li.active a,
+.side-menu.user-side li.active a i {
+    color: #5bc0de !important;
+}
+
+.side-menu li.active {
+    background: transparent;
+    border: 1px solid #ddd;
+    border-right: 3px solid #ff4c59 !important;
+    color: #ff4c59 !important;
+}
+
+.side-menu li.active a i {
+    color: #ff4c59;
+}
+
+.side-menu li.active:hover,
+.side-menu li:hover:not(:first-of-type) {
+    background: #eee;
+    border-color: #eee;
+    border-top-color: #ddd;
+}
+
+.side-menu .list-group-item:first-child:hover {
+    border-radius: 0;
+    background: #eee;
+}
+
+.side-menu li a {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    display: block;
+    padding: 8px 15px;
+}
+.side-menu li a i {
+    margin-left: 5px;
+    color: #888;
+}
+/* end sidebar */
+
+.panel-heading {
+    background: #fff !important;
+}
+
+.ratio-holder {
+    position: relative;
+    overflow: hidden;
+    padding-top: 1.6%;
+}
+.ratio-holder::before {
+    content: "";
+    padding-top: 56.16%;
+    display: block;
+}
+
+.ratio-holder .ratio-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 7px;
+}
+
+.ratio-holder .ratio-content img {
+    height: 100%;
+    width: 100%;
+}
+
+.pagination {
+    margin: 10px;
+    float: right;
+}
+
+.panel-footer {
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+}
+
+/* start search */
+.search {
+    margin: 0px 0 20px;
+    text-align: right;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: #555;
+    font-size: 12px;
+}
+.search .title,
+.side-menu .title {
+    background: #ff4c59;
+    color: #fff;
+    padding: 12px 0;
+}
+
+.search input {
+    color: #555;
+    font-size: 12px;
+}
+
+.search form {
+    padding: 10px 0;
+    border: 1px solid #eee;
+}
+.search .title h3,
+.side-menu .title h3 {
+    font-size: 18px;
+    color: inherit;
+    margin-right: 15px;
+}
+.search input {
+    text-align: right;
+}
+.search .form-group {
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.img {
+    margin-top: 10px;
+    text-align: right;
+    overflow: hidden;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.bu_quick_info {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.bu_quick_info a{
+    margin-bottom: 5px;
+}
+
+.bu_quick_info a{
+    margin-right: 5px;
+}

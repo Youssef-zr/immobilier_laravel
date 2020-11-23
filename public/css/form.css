@@ -1,0 +1,295 @@
+.validate-form {
+    background: url("../img/bg_user.png") no-repeat center left;
+    background-size: contain;
+    padding: 30px 0;
+    margin: 50px 0;
+}
+
+.validate-form .form {
+    /* margin: auto; */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 2px 6px 9px 0px #1c2c2c;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#3a4242),
+        to(#122525)
+    );
+    background: linear-gradient(to right, #3a4242, #122525);
+    opacity: 0.89;
+    padding: 50px 20px 10px;
+    border-radius: 0 8px 8px 0;
+    border-left: 4px solid #ff4c59;
+}
+
+.validate-form .form .avatar {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 7px;
+    background: #fff;
+    top: -60px;
+    right: 50%;
+    transform: translatex(50px);
+}
+.validate-form .form .avatar img {
+    border-radius: 50%;
+}
+.validate-form .form .register-title {
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    min-height: 56px;
+}
+.validate-form .form .register-title h2 {
+    font-size: 35px;
+    font-family: tahoma;
+    letter-spacing: 1px;
+    position: relative;
+    color: #ddd;
+    text-align: center;
+}
+.validate-form .form .register-title h2::after,
+.validate-form .form .register-title h2::before {
+    content: "";
+    position: absolute;
+    top: 55%;
+    left: 0;
+    width: 35%;
+    height: 1px;
+    background: #ddd;
+}
+.validate-form .form .register-title h2::before {
+    left: auto;
+    right: 0;
+}
+@media (max-width: 574px) {
+    .validate-form .form .register-title h2::after,
+    .validate-form .form .register-title h2::before {
+        width: 25%;
+    }
+}
+@media (max-width: 394px) {
+    .validate-form .form .register-title h2::after,
+    .validate-form .form .register-title h2::before {
+        width: 18%;
+        top: 58%;
+    }
+}
+.validate-form .form .register-title p {
+    color: #ddd;
+    margin-top: 15px;
+}
+.validate-form .form .form-group:not(:last-of-type) .box-container {
+    position: relative;
+    height: 55px;
+    border: 1px groove #eee;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+.validate-form .form .form-group:not(:last-of-type) .box-container .form-label {
+    position: absolute;
+    top: -16px;
+    right: 20px;
+    padding: 3px 15px;
+    z-index: 1;
+    background: #1d2d2d;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 500;
+    border: 1px solid #eee;
+    text-transform: capitalize;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    border-radius: 0;
+    border: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    box-shadow: none;
+    padding: 10px 10px 0 35px;
+    background: none;
+    color: #f3ebb5;
+    direction: rtl;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control:focus {
+    box-shadow: none;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control::-webkit-input-placeholder {
+    color: #eee;
+    font-size: 13px;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control::-moz-placeholder {
+    color: #eee;
+    font-size: 13px;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control:-ms-input-placeholder {
+    color: #eee;
+    font-size: 13px;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control::-ms-input-placeholder {
+    color: #eee;
+    font-size: 13px;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .form-control::placeholder {
+    color: #eee;
+    font-size: 13px;
+}
+.validate-form .form .form-group:not(:last-of-type) .box-container .icon {
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    color: #fff;
+    font-size: 20px;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container
+    .icon
+    .fa-envelope {
+    font-size: 17px;
+}
+.validate-form .form .form-group:not(:last-of-type) .box-container.not-valid {
+    border-color: #eb4d4b;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container.not-valid
+    .form-label {
+    border-color: #eb4d4b;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container.not-valid
+    + span.error {
+    color: #eb4d4b;
+    display: block;
+    margin-top: 8px;
+}
+.validate-form .form .form-group:not(:last-of-type) .box-container.is-valid {
+    border-color: #2df18f;
+}
+.validate-form
+    .form
+    .form-group:not(:last-of-type)
+    .box-container.is-valid
+    .form-label {
+    border-color: #2df18f;
+}
+.validate-form .form .form-group:last-of-type {
+    margin-top: 20px;
+    width: 130px;
+    text-align: center;
+}
+.validate-form .form .form-group:last-of-type .btn-danger {
+    background: #ff4c59 !important;
+    border: none;
+    /* height: 40px; */
+    font-size: 15px;
+    color: azure;
+    border-radius: 5px !important;
+}
+
+.validate-form .form .form-group:last-of-type .btn-danger:hover {
+    background: #ff4c59 !important;
+    opacity: 0.9;
+}
+@media (max-width: 343px) {
+    .validate-form .form .form-group:last-of-type .btn-danger {
+        padding: 0px 10px !important;
+        width: auto;
+    }
+}
+.validate-form .form .sign-in {
+    color: #eee;
+    text-align: right;
+    font-family: tahoma;
+    font-size: 13px;
+    -webkit-transition: ease 0.5s;
+    transition: ease 0.5s;
+}
+.validate-form .form .sign-in a {
+    color: #eb4d4b;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 3px;
+}
+.validate-form .form .sign-in a:hover {
+    text-decoration: none;
+    color: #f15865;
+}
+@media (max-width: 343px) {
+    .validate-form .form .sign-in {
+        display: block;
+        text-align: left;
+    }
+    .validate-form .form .sign-in a {
+        font-size: 12px;
+    }
+}
+
+.validate-form .form .remember {
+    margin-bottom: 0 !important;
+}
+.validate-form .form .remember label {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.icheck-danger
+    > input:first-child:checked
+    + input[type="hidden"]
+    + label::before,
+.icheck-danger > input:first-child:checked + label::before {
+    background: #ff4c59 !important;
+    border-color: #ff4c59 !important;
+}
+
+@media (min-width: 567px) and (max-width: 992px) {
+    .form {
+        width: 400px;
+        background-color: orange !important;
+        margin: auto;
+    }
+}

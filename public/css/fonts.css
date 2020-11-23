@@ -1,0 +1,15 @@
+/* @import url("http://www.fontstatic.com/f=sky"); */
+
+*{
+    /* للخط العادي */
+    font-family: "WYekan", "Helvetica Neue", Helvetica;
+}
+/*
+h1,h2,h3,h4,h5,h6{
+
+    font-family: 'sky-bold';
+} */
+
+.btn{
+    font-size: 13px;
+}

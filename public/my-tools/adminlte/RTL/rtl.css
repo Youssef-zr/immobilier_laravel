@@ -1,0 +1,13 @@
+.sidebar-menu li a .fa-angle-left,
+.sidebar-menu li .label, .sidebar-menu li .badge {
+	margin-top: -15px !important;
+}
+
+.sidebar-menu .menu-open > a > .pull-right-container > .fa-angle-right{
+    transition:.4s ease;
+    transform: rotate(90deg);
+}
+
+.sorting{
+    width:170px
+}
